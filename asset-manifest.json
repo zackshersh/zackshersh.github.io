@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.efaab2ce.css",
-    "main.js": "/static/js/main.8eaffd5e.js",
+    "main.css": "/static/css/main.50207375.css",
+    "main.js": "/static/js/main.713dad8c.js",
     "static/media/PPNeueMontreal-Bold.woff2": "/static/media/PPNeueMontreal-Bold.e056b46aa1e80becbe2c.woff2",
     "static/media/PPNeueMontreal-Medium.woff2": "/static/media/PPNeueMontreal-Medium.4105b1cc8dd5fc295141.woff2",
     "static/media/PPNeueMontreal-Book.woff2": "/static/media/PPNeueMontreal-Book.0ce3b95c3d3cd61d2489.woff2",
     "static/media/PPNeueMontreal-Italic.woff2": "/static/media/PPNeueMontreal-Italic.07d19b03900783cb1440.woff2",
     "static/media/PPNeueMontreal-Regular.woff2": "/static/media/PPNeueMontreal-Regular.e975bf8371aec1efabce.woff2",
     "index.html": "/index.html",
-    "main.efaab2ce.css.map": "/static/css/main.efaab2ce.css.map",
-    "main.8eaffd5e.js.map": "/static/js/main.8eaffd5e.js.map"
+    "main.50207375.css.map": "/static/css/main.50207375.css.map",
+    "main.713dad8c.js.map": "/static/js/main.713dad8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.efaab2ce.css",
-    "static/js/main.8eaffd5e.js"
+    "static/css/main.50207375.css",
+    "static/js/main.713dad8c.js"
   ]
 }
