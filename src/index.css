@@ -1,13 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: black;
+    --secondary: #444444;
+}
+
+html {
+    /* font-size: 12px; */
+}
 body {
-  margin: 0;
+  /* margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+* {
+    font-family: 'Helvetica';
+    font-family: "Neue Montreal", 'Helvetica';
+    box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Content, .Content-Display {
+    transition-property: width, max-width, height, max-height;
+    transition-duration: 0.3s;
+}
+
+
+.Project-Card {
+    transition-property: padding;
+    transition-duration: 0.3s;
+}
+.Project-Card a {
+    transition-property: color, font-size, opacity;
+    transition-duration: 0.3s;
+    /* font-weight: 100; */
+    /* color: var(--secondary); */
+}
+
+.Project-Card.hovered a {
+    /* color: var(--primary); */
+}
+
+.Tags-Cont-Mask {
+    overflow:hidden;
+
+    transition-property: max-height;
+    transition-duration: 0.3s;
+    max-height: 0px;
+}
+
+.Project-Card.hovered .Tags-Cont-Mask {
+    max-height: 300px;
+}
+
+.Tags-Cont {
+    transition-property: opacity, transform, margin;
+    transition-duration: 0.3s;
+    opacity: 1;
+    margin-top: -4rem;
+    z-index: -2;
+
+    /* transform: translateY(-20px); */
+
+}
+
+.Project-Card.hovered .Tags-Cont {
+    opacity: 1;
+    margin-top: 0rem;
+}
+
+.Project-Card .Body-Container {
+    overflow: hidden;
+    max-height: 0px;
+    transition-property: max-height;
+    transition-duration: 0.1s;
+    /* transition-delay: 0.2s; */
+}
+
+.Project-Card.active .Body-Container {
+    max-height: 800px;
+}
+
+.Project-Card .Body {
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+    /* margin-top: -5px; */
+}
+
+.Project-Card.active .Body {
+    margin-top: 0;
+}
+
+.Project-Text {
+    line-height: calc(1ex / 0.37);
+    
+}
+
+
+.Media-Display > div {
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.Media-Display > div > * {
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+
+.Media-Display2, .Content-Display > div {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* SPECIAL MAX WIDTHS */
+/* number refers to aspect ratio, ie .maxW-1 is for imgs with a 1 to 1 aspect ratio */
+
+.maxW-1 {
+    max-width: 50vh;
+}
+.maxW-2 {
+    max-width: 80vh;
+}
+.maxW-1_5 {
+    max-width: 70vh;
+    min-width: 30vw;
+}
+
+.maxW-0_5 {
+    max-width: 20vh;
 }
