@@ -28,8 +28,8 @@ class RectField{
 
         this.margin = 1;
 
-        this.noiseScale = 0.0005;
-        this.timeScale = 0.002;
+        this.noiseScale = 0.001;
+        this.timeScale = 0.005;
 
         // for calculating noise tables, will clear noise tables if it is a new frame
         this.currentFrame = 0;

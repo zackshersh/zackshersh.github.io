@@ -22,7 +22,7 @@ function Content({styles, mediaState, activeContentGetSet}) {
 
 
     return (
-        <div className={`Content border-r border-black ${styles} overflow-scroll p-8`}>
+        <div className={`Content border-r border-black ${styles} overflow-y-auto overflow-x-hidden p-8`}>
                 <Title selectedProject={selectedProject} />
 
                 <div className='Spacer min-h-4'></div>

@@ -31,7 +31,7 @@ function ContentDisplay({styles, mediaState, activeContentGetSet,val, setSelecte
 
 
     return (
-        <div ref={parentContainer} className={`Content-Display ${styles} bg-stone-900 flex flex-col overflow-scroll`}>
+        <div ref={parentContainer} className={`Content-Display ${styles} bg-stone-900 flex flex-col overflow-auto`}>
             <div ref={fullMediaContainer} className={`relative pt-3 pb-24 px-6 flex flex-col flex-wrap min-w-[50vw] ${activeContentGetSet.get.length ? "block" : "hidden"}`}>
                 <h3 className='mb-3 w-full sm:hidden text-stone-200' onMouseDown={() => {
                     activeContentGetSet.set([]);
